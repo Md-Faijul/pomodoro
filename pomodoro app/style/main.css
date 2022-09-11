@@ -1,0 +1,586 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .analysis {
+  z-index: 111;
+  left: 30px;
+  top: 30px;
+  position: absolute;
+  color: rgb(0, 255, 42);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+@-webkit-keyframes hack {
+  0% {
+    opacity: 100%;
+  }
+  5% {
+    opacity: 20%;
+  }
+  10% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 10%;
+  }
+  30% {
+    opacity: 100%;
+  }
+  42% {
+    opacity: 42%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 20%;
+  }
+  78% {
+    opacity: 100%;
+  }
+  85% {
+    opacity: 10%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  92% {
+    opacity: 42%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes hack {
+  0% {
+    opacity: 100%;
+  }
+  5% {
+    opacity: 20%;
+  }
+  10% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 10%;
+  }
+  30% {
+    opacity: 100%;
+  }
+  42% {
+    opacity: 42%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 20%;
+  }
+  78% {
+    opacity: 100%;
+  }
+  85% {
+    opacity: 10%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  92% {
+    opacity: 42%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+body .analysis .study {
+  display: flex;
+  flex-direction: column;
+}
+body .analysis .study .readingpart {
+  display: flex;
+}
+body .analysis .study h1 {
+  font-size: 1rem;
+  color: rgb(0, 255, 42);
+  font-family: "Courier New", Courier, monospace;
+}
+body .analysis .study p {
+  padding: 0 10px;
+}
+body .analysis .takebreak .breakingpart {
+  display: flex;
+}
+body .analysis .takebreak h1 {
+  color: rgb(0, 255, 42);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+}
+body .analysis .takebreak p {
+  padding: 0 10px;
+}
+body .analysis .goal-time {
+  display: flex;
+  flex-direction: column;
+}
+body .analysis .goal-time h1 {
+  color: rgb(0, 255, 42);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+}
+body .analysis .goal-time .goal-part {
+  display: flex;
+}
+body .analysis .goal-time .goal-part p {
+  padding: 0 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: rgb(216, 55, 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .audio {
+  visibility: hidden;
+}
+.container .analysis {
+  left: 30px;
+  top: 30px;
+  position: absolute;
+  color: rgb(0, 255, 42);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+@keyframes hack {
+  0% {
+    opacity: 100%;
+  }
+  5% {
+    opacity: 20%;
+  }
+  10% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 10%;
+  }
+  30% {
+    opacity: 100%;
+  }
+  42% {
+    opacity: 42%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 20%;
+  }
+  78% {
+    opacity: 100%;
+  }
+  85% {
+    opacity: 10%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  92% {
+    opacity: 42%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.container .analysis .study {
+  display: flex;
+  flex-direction: column;
+}
+.container .analysis .study .readingpart {
+  display: flex;
+}
+.container .analysis .study h1 {
+  font-size: 1rem;
+  color: rgb(0, 255, 42);
+  font-family: "Courier New", Courier, monospace;
+}
+.container .analysis .study p {
+  padding: 0 10px;
+}
+.container .analysis .takebreak .breakingpart {
+  display: flex;
+}
+.container .analysis .takebreak h1 {
+  color: rgb(0, 255, 42);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+}
+.container .analysis .takebreak p {
+  padding: 0 10px;
+}
+.container .parfullcontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 30px;
+  left: 0;
+  position: absolute;
+}
+.container .parfullcontainer .try {
+  font-size: 4rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .parfullcontainer .parcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .parfullcontainer .parcontainer .zero {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 2rem;
+}
+.container .parfullcontainer .parcontainer .parcentage {
+  margin-right: 20px;
+  border-radius: 15px;
+  width: 100px;
+  height: 190px;
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.container .parfullcontainer .parcontainer .parcentage .step {
+  margin: 2px 0;
+  width: 100%;
+  height: 15px;
+  background: rgb(248, 51, 51);
+}
+.container .parfullcontainer .parcontainer .parcentage .stepgreen {
+  background: rgb(50, 177, 50);
+}
+.container .parfullcontainer .parcontainer .hundrate {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.container .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 600px;
+  background: rgb(255, 103, 52);
+  border-radius: 10px;
+}
+.container .main h1 {
+  padding: 30px 0;
+  color: white;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .main .btn {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 10px;
+  background: rgb(252, 105, 56);
+}
+.container .main .active,
+.container .main .btn:hover {
+  cursor: pointer;
+  background: rgb(201, 85, 46);
+}
+.container .count {
+  display: flex;
+}
+.container .count h2 {
+  font-size: 7rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px 0;
+}
+.container .count span {
+  font-size: 7rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px 0;
+}
+.container .start button {
+  width: 400px;
+  height: 70px;
+  background: rgb(131, 1, 143);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .start button:hover {
+  cursor: pointer;
+  background: rgb(235, 11, 255);
+}
+
+.shortBreak {
+  width: 100%;
+  height: 100vh;
+  background: rgb(2, 184, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.shortBreak .analysis {
+  left: 30px;
+  top: 30px;
+  position: absolute;
+  color: rgb(0, 255, 42);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+@keyframes hack {
+  0% {
+    opacity: 100%;
+  }
+  5% {
+    opacity: 20%;
+  }
+  10% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 10%;
+  }
+  30% {
+    opacity: 100%;
+  }
+  42% {
+    opacity: 42%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 20%;
+  }
+  78% {
+    opacity: 100%;
+  }
+  85% {
+    opacity: 10%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  92% {
+    opacity: 42%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.shortBreak .analysis .study {
+  display: flex;
+  flex-direction: column;
+}
+.shortBreak .analysis .study .readingpart {
+  display: flex;
+}
+.shortBreak .analysis .study h1 {
+  font-size: 1rem;
+  color: rgb(0, 255, 42);
+  font-family: "Courier New", Courier, monospace;
+}
+.shortBreak .analysis .study p {
+  padding: 0 10px;
+}
+.shortBreak .analysis .takebreak .breakingpart {
+  display: flex;
+}
+.shortBreak .analysis .takebreak h1 {
+  color: rgb(0, 255, 42);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+}
+.shortBreak .analysis .takebreak p {
+  padding: 0 10px;
+}
+.shortBreak .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 600px;
+  background: rgb(126, 255, 52);
+  border-radius: 10px;
+}
+.shortBreak .main h1 {
+  padding: 30px 0;
+  color: white;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.shortBreak .main .btn {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 10px;
+  background: rgb(126, 255, 52);
+}
+.shortBreak .main .active,
+.shortBreak .main .btn:hover {
+  cursor: pointer;
+  background: rgb(160, 201, 46);
+}
+.shortBreak .count {
+  display: flex;
+}
+.shortBreak .count h2 {
+  font-size: 7rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px 0;
+}
+.shortBreak .count span {
+  font-size: 7rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px 0;
+}
+.shortBreak .start button {
+  width: 400px;
+  height: 70px;
+  background: rgb(94, 88, 90);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.shortBreak .start button:hover {
+  cursor: pointer;
+  background: rgb(145, 143, 143);
+}
+
+.longBreak {
+  width: 100%;
+  height: 100vh;
+  background: rgb(2, 102, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.longBreak .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 600px;
+  background: rgb(52, 140, 255);
+  border-radius: 10px;
+}
+.longBreak .main h1 {
+  padding: 30px 0;
+  color: white;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.longBreak .main .btn {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 10px;
+  background: rgb(52, 140, 255);
+}
+.longBreak .main .active,
+.longBreak .main .btn:hover {
+  cursor: pointer;
+  background: rgb(35, 118, 173);
+}
+.longBreak .count {
+  display: flex;
+}
+.longBreak .count h2 {
+  font-size: 7rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px 0;
+}
+.longBreak .count span {
+  font-size: 7rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px 0;
+}
+.longBreak .start button {
+  width: 400px;
+  height: 70px;
+  background: rgb(129, 143, 1);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.longBreak .start button:hover {
+  cursor: pointer;
+  background: rgb(231, 255, 11);
+}
+
+.showshort {
+  visibility: inherit;
+  z-index: 10;
+}
+
+.showshort2 {
+  visibility: inherit;
+  z-index: 11;
+}/*# sourceMappingURL=main.css.map */
